@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      integrity="sha512-u7ppO4TLg4v6EY8yQ6T6d66inT0daGyTodAi6ycbw9+/AU8KMLAF7Z7YGKPMRA96v7t+c7O1s6YCTGkok6p9ZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <h1>Video Player</h1>
+    <div class="video-player">
+      <video class="video">
+        <source
+          src="./assets/video/2 Minutes Of Beautiful Scenery's On Planet Earth_Nature Is Power_Episode 01.mp4"
+          type="video/mp4"
+        />
+        <p>Your browser doesn't support HTML5 video.</p>
+      </video>
+      <div class="controls">
+        <div class="progress">
+          <div class="progress__filled"></div>
+        </div>
+        <button class="controls__button toggleButton" title="Toggle Play">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="controls__button" data-skip="-10">« 10s</button>
+        <button class="controls__button" data-skip="10">10s »</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
