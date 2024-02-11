@@ -3,6 +3,8 @@ const toggleBtn = document.querySelector(".toggleButton");
 const progress__filled = document.querySelector(".progress__filled");
 const progress = document.querySelector(".progress");
 const skip = document.querySelectorAll("[data-skip]");
+const controls = document.querySelector(".controls");
+const videoPlayer = document.querySelector(".video-player");
 
 skip.forEach((item) => {
   item.addEventListener("click", () => {
@@ -65,4 +67,12 @@ video.addEventListener("click", () => {
   } else {
     pauseBtn();
   }
+});
+
+
+videoPlayer.addEventListener("mouseout", (e) => {
+  controls.setAttribute("style", "opacity: 0 ");
+});
+videoPlayer.addEventListener("mouseover", (e) => {
+  controls.setAttribute("style", "opacity: 1");
 });
